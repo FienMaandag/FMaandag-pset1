@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FMaandag_pset1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,333 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gkd-yK-b2L">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wk-uc-ROo">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Mr. Potato Head" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWJ-NP-Y5g">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="17"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="body" translatesAutoresizingMaskIntoConstraints="NO" id="ndk-Ox-WvI">
+                                                <rect key="frame" x="0.0" y="17" width="375" height="306.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arms" translatesAutoresizingMaskIntoConstraints="NO" id="DVS-ot-tGX">
+                                                <rect key="frame" x="0.0" y="17" width="375" height="306.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ears" translatesAutoresizingMaskIntoConstraints="NO" id="8pc-vv-5bR">
+                                                <rect key="frame" x="0.0" y="17" width="375" height="306.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyebrows" translatesAutoresizingMaskIntoConstraints="NO" id="Gqq-dp-IgR">
+                                                <rect key="frame" x="0.0" y="17" width="375" height="306.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyes" translatesAutoresizingMaskIntoConstraints="NO" id="J3d-pb-QCz">
+                                                <rect key="frame" x="0.0" y="17" width="375" height="306.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glasses" translatesAutoresizingMaskIntoConstraints="NO" id="c2K-UT-GXb">
+                                                <rect key="frame" x="0.0" y="17" width="375" height="306.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hat" translatesAutoresizingMaskIntoConstraints="NO" id="kAc-0R-ksT">
+                                                <rect key="frame" x="0.0" y="17" width="375" height="306.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mouth" translatesAutoresizingMaskIntoConstraints="NO" id="ufI-3Y-oIs">
+                                                <rect key="frame" x="0.0" y="17" width="375" height="306.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mustache" translatesAutoresizingMaskIntoConstraints="NO" id="xbK-bQ-Toa">
+                                                <rect key="frame" x="0.0" y="17" width="375" height="306.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nose" translatesAutoresizingMaskIntoConstraints="NO" id="0l0-IZ-h03">
+                                                <rect key="frame" x="0.0" y="17" width="375" height="306.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes" translatesAutoresizingMaskIntoConstraints="NO" id="424-SP-sHZ">
+                                                <rect key="frame" x="0.0" y="17" width="375" height="306.5"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="J3d-pb-QCz" firstAttribute="top" secondItem="4Wk-uc-ROo" secondAttribute="top" constant="17" id="3Zi-6p-sgt"/>
+                                            <constraint firstAttribute="bottom" secondItem="xbK-bQ-Toa" secondAttribute="bottom" id="41W-sf-qOW"/>
+                                            <constraint firstAttribute="trailing" secondItem="424-SP-sHZ" secondAttribute="trailing" id="5qZ-Cy-shz"/>
+                                            <constraint firstAttribute="bottom" secondItem="J3d-pb-QCz" secondAttribute="bottom" id="CEu-C1-jzt"/>
+                                            <constraint firstAttribute="bottom" secondItem="kAc-0R-ksT" secondAttribute="bottom" id="Fmv-xb-6vf"/>
+                                            <constraint firstItem="8pc-vv-5bR" firstAttribute="top" secondItem="4Wk-uc-ROo" secondAttribute="top" constant="17" id="IBV-EP-qyI"/>
+                                            <constraint firstItem="kAc-0R-ksT" firstAttribute="top" secondItem="4Wk-uc-ROo" secondAttribute="top" constant="17" id="JJ9-O9-oXK"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gqq-dp-IgR" secondAttribute="trailing" id="Jgu-Na-mwj"/>
+                                            <constraint firstItem="tWJ-NP-Y5g" firstAttribute="leading" secondItem="4Wk-uc-ROo" secondAttribute="leading" id="KhF-H0-KeT"/>
+                                            <constraint firstAttribute="trailing" secondItem="0l0-IZ-h03" secondAttribute="trailing" id="LQA-h6-3JM"/>
+                                            <constraint firstItem="tWJ-NP-Y5g" firstAttribute="top" secondItem="4Wk-uc-ROo" secondAttribute="top" id="Lyl-s5-rGN"/>
+                                            <constraint firstItem="xbK-bQ-Toa" firstAttribute="top" secondItem="4Wk-uc-ROo" secondAttribute="top" constant="17" id="Mvq-e5-zGe"/>
+                                            <constraint firstItem="ndk-Ox-WvI" firstAttribute="leading" secondItem="4Wk-uc-ROo" secondAttribute="leading" id="NQI-AJ-q2c"/>
+                                            <constraint firstAttribute="trailing" secondItem="xbK-bQ-Toa" secondAttribute="trailing" id="Pnh-ft-PSs"/>
+                                            <constraint firstAttribute="trailing" secondItem="c2K-UT-GXb" secondAttribute="trailing" id="Q8W-oz-mVJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="424-SP-sHZ" secondAttribute="bottom" id="Sz3-CJ-Inn"/>
+                                            <constraint firstItem="424-SP-sHZ" firstAttribute="top" secondItem="4Wk-uc-ROo" secondAttribute="top" constant="17" id="UXI-jp-DW5"/>
+                                            <constraint firstItem="424-SP-sHZ" firstAttribute="top" secondItem="tWJ-NP-Y5g" secondAttribute="bottom" id="VjO-T5-vCJ"/>
+                                            <constraint firstItem="8pc-vv-5bR" firstAttribute="leading" secondItem="4Wk-uc-ROo" secondAttribute="leading" id="WBa-Um-LQE"/>
+                                            <constraint firstAttribute="trailing" secondItem="tWJ-NP-Y5g" secondAttribute="trailing" id="XZG-LC-LQC"/>
+                                            <constraint firstAttribute="trailing" secondItem="DVS-ot-tGX" secondAttribute="trailing" id="ZbN-dh-ZUc"/>
+                                            <constraint firstItem="424-SP-sHZ" firstAttribute="leading" secondItem="4Wk-uc-ROo" secondAttribute="leading" id="Zsk-gk-vwV"/>
+                                            <constraint firstItem="J3d-pb-QCz" firstAttribute="leading" secondItem="4Wk-uc-ROo" secondAttribute="leading" id="axf-ix-zf4"/>
+                                            <constraint firstItem="Gqq-dp-IgR" firstAttribute="leading" secondItem="4Wk-uc-ROo" secondAttribute="leading" id="bIQ-SI-4MK"/>
+                                            <constraint firstItem="Gqq-dp-IgR" firstAttribute="top" secondItem="4Wk-uc-ROo" secondAttribute="top" constant="17" id="bZA-2m-wpL"/>
+                                            <constraint firstAttribute="trailing" secondItem="J3d-pb-QCz" secondAttribute="trailing" id="bo6-il-hDq"/>
+                                            <constraint firstItem="xbK-bQ-Toa" firstAttribute="leading" secondItem="4Wk-uc-ROo" secondAttribute="leading" id="cxq-vf-6MD"/>
+                                            <constraint firstItem="c2K-UT-GXb" firstAttribute="top" secondItem="4Wk-uc-ROo" secondAttribute="top" constant="17" id="dAR-Yb-RLb"/>
+                                            <constraint firstAttribute="trailing" secondItem="ufI-3Y-oIs" secondAttribute="trailing" id="fS6-4q-nd5"/>
+                                            <constraint firstAttribute="trailing" secondItem="8pc-vv-5bR" secondAttribute="trailing" id="fXc-YU-TaU"/>
+                                            <constraint firstItem="c2K-UT-GXb" firstAttribute="leading" secondItem="4Wk-uc-ROo" secondAttribute="leading" id="fq0-gM-eu7"/>
+                                            <constraint firstItem="0l0-IZ-h03" firstAttribute="leading" secondItem="4Wk-uc-ROo" secondAttribute="leading" id="hRO-nP-d39"/>
+                                            <constraint firstAttribute="bottom" secondItem="DVS-ot-tGX" secondAttribute="bottom" id="hg0-qy-5h7"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gqq-dp-IgR" secondAttribute="bottom" id="kVS-Ob-lv6"/>
+                                            <constraint firstAttribute="bottom" secondItem="ufI-3Y-oIs" secondAttribute="bottom" id="l5A-uC-BxX"/>
+                                            <constraint firstAttribute="bottom" secondItem="ndk-Ox-WvI" secondAttribute="bottom" id="mAb-eo-1E0"/>
+                                            <constraint firstItem="DVS-ot-tGX" firstAttribute="leading" secondItem="4Wk-uc-ROo" secondAttribute="leading" id="n6V-9l-FyV"/>
+                                            <constraint firstItem="ufI-3Y-oIs" firstAttribute="top" secondItem="4Wk-uc-ROo" secondAttribute="top" constant="17" id="nqK-GN-ViV"/>
+                                            <constraint firstItem="0l0-IZ-h03" firstAttribute="top" secondItem="4Wk-uc-ROo" secondAttribute="top" constant="17" id="pR5-CZ-bDX"/>
+                                            <constraint firstItem="tWJ-NP-Y5g" firstAttribute="top" secondItem="4Wk-uc-ROo" secondAttribute="top" id="pWR-To-Frp"/>
+                                            <constraint firstItem="kAc-0R-ksT" firstAttribute="leading" secondItem="4Wk-uc-ROo" secondAttribute="leading" id="qTe-Hz-h8B"/>
+                                            <constraint firstItem="DVS-ot-tGX" firstAttribute="top" secondItem="4Wk-uc-ROo" secondAttribute="top" constant="17" id="sxb-E4-Nwf"/>
+                                            <constraint firstItem="ufI-3Y-oIs" firstAttribute="leading" secondItem="4Wk-uc-ROo" secondAttribute="leading" id="wNi-c7-EY8"/>
+                                            <constraint firstAttribute="bottom" secondItem="0l0-IZ-h03" secondAttribute="bottom" id="wOv-hZ-yJ3"/>
+                                            <constraint firstItem="ndk-Ox-WvI" firstAttribute="top" secondItem="4Wk-uc-ROo" secondAttribute="top" constant="17" id="wZU-9W-Ogh"/>
+                                            <constraint firstAttribute="trailing" secondItem="ndk-Ox-WvI" secondAttribute="trailing" id="zNe-P9-Pbb"/>
+                                            <constraint firstAttribute="trailing" secondItem="kAc-0R-ksT" secondAttribute="trailing" id="zQr-7j-sIA"/>
+                                            <constraint firstAttribute="bottom" secondItem="8pc-vv-5bR" secondAttribute="bottom" id="zRN-XW-LCo"/>
+                                            <constraint firstAttribute="bottom" secondItem="c2K-UT-GXb" secondAttribute="bottom" id="zbZ-Hl-Sxy"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="E82-Wf-fZC">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="RUQ-4n-ftE">
+                                                <rect key="frame" x="8" y="8" width="177" height="307.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="j3E-1c-Fnz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zd8-3Q-OUp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="addArms:" destination="BYZ-38-t0r" eventType="valueChanged" id="R1J-nn-wWy"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arms" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtR-Vg-6Df">
+                                                                <rect key="frame" x="54" y="0.0" width="123" height="31"/>
+                                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleAspectFit" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gjj-gp-xQN">
+                                                        <rect key="frame" x="0.0" y="69" width="177" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SJt-MY-R2d">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="addEars:" destination="BYZ-38-t0r" eventType="valueChanged" id="0bL-xV-3Fo"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ears" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWU-Ez-1hu">
+                                                                <rect key="frame" x="54" y="0.0" width="123" height="31"/>
+                                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="T11-Rb-aa8">
+                                                        <rect key="frame" x="0.0" y="138.5" width="177" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fi6-KB-gKP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="addBrows:" destination="BYZ-38-t0r" eventType="valueChanged" id="J0t-sn-F54"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eyebrows" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Uq-LQ-bIg">
+                                                                <rect key="frame" x="54" y="0.0" width="123" height="31"/>
+                                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wm5-Vc-q1O">
+                                                        <rect key="frame" x="0.0" y="207.5" width="177" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="13k-1D-9a2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="addEyes:" destination="BYZ-38-t0r" eventType="valueChanged" id="XuD-2Q-qKD"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eyes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sI2-VL-3fU">
+                                                                <rect key="frame" x="54" y="0.0" width="123" height="31"/>
+                                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wIb-1g-r6h">
+                                                        <rect key="frame" x="0.0" y="276.5" width="177" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Wo-On-DK5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="addGlasses:" destination="BYZ-38-t0r" eventType="valueChanged" id="jN8-Jl-DcT"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glasses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cH-zc-Mnl">
+                                                                <rect key="frame" x="54" y="0.0" width="123" height="31"/>
+                                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="DpC-c7-mRh">
+                                                <rect key="frame" x="190" y="8" width="177" height="307.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="g27-dg-bS5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nax-sa-khE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="addHat:" destination="BYZ-38-t0r" eventType="valueChanged" id="1Vb-qr-JhC"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihd-bx-Cc1">
+                                                                <rect key="frame" x="54" y="0.0" width="123" height="31"/>
+                                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vzl-UR-F0w">
+                                                        <rect key="frame" x="0.0" y="69" width="177" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KOt-Ir-hUQ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="addMouth:" destination="BYZ-38-t0r" eventType="valueChanged" id="ngF-JQ-DVq"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mouth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGd-1P-O7c">
+                                                                <rect key="frame" x="54" y="0.0" width="123" height="31"/>
+                                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Pgl-JR-kqp">
+                                                        <rect key="frame" x="0.0" y="138.5" width="177" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kqm-ak-rCy">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="addMustache:" destination="BYZ-38-t0r" eventType="valueChanged" id="zdc-2n-oRs"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mustache" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZX-vi-XBQ">
+                                                                <rect key="frame" x="54" y="0.0" width="123" height="31"/>
+                                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hDr-zz-xyF">
+                                                        <rect key="frame" x="0.0" y="207.5" width="177" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fnl-0q-Ufg">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="addNose:" destination="BYZ-38-t0r" eventType="valueChanged" id="kzi-jP-jFH"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ci-ZL-ENC">
+                                                                <rect key="frame" x="54" y="0.0" width="123" height="31"/>
+                                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BVj-YV-Dzr">
+                                                        <rect key="frame" x="0.0" y="276.5" width="177" height="31"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OJW-e9-uQk">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="addShoes:" destination="BYZ-38-t0r" eventType="valueChanged" id="lyb-HX-hao"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5F-5w-HjF">
+                                                                <rect key="frame" x="54" y="0.0" width="123" height="31"/>
+                                                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gkd-yK-b2L" secondAttribute="bottom" id="EDk-ok-cuP"/>
+                            <constraint firstItem="Gkd-yK-b2L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NyZ-2D-SRB"/>
+                            <constraint firstAttribute="trailing" secondItem="Gkd-yK-b2L" secondAttribute="trailing" id="QNt-sg-nhB"/>
+                            <constraint firstItem="Gkd-yK-b2L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mmh-JB-4fs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="arms" destination="DVS-ot-tGX" id="crB-1u-j0f"/>
+                        <outlet property="brows" destination="Gqq-dp-IgR" id="50W-2I-o3X"/>
+                        <outlet property="ears" destination="8pc-vv-5bR" id="Hno-gC-Asy"/>
+                        <outlet property="eyes" destination="J3d-pb-QCz" id="lco-V3-bfe"/>
+                        <outlet property="glasses" destination="c2K-UT-GXb" id="R4s-F7-3w6"/>
+                        <outlet property="hat" destination="kAc-0R-ksT" id="HxP-cA-EfG"/>
+                        <outlet property="mouth" destination="ufI-3Y-oIs" id="zfV-k8-GbN"/>
+                        <outlet property="mustache" destination="xbK-bQ-Toa" id="Fva-U3-WDK"/>
+                        <outlet property="nose" destination="0l0-IZ-h03" id="HUW-f9-2pR"/>
+                        <outlet property="shoes" destination="424-SP-sHZ" id="qSx-N7-5Th"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arms" width="367" height="428"/>
+        <image name="body" width="367" height="428"/>
+        <image name="ears" width="367" height="428"/>
+        <image name="eyebrows" width="367" height="428"/>
+        <image name="eyes" width="367" height="428"/>
+        <image name="glasses" width="367" height="428"/>
+        <image name="hat" width="367" height="428"/>
+        <image name="mouth" width="367" height="428"/>
+        <image name="mustache" width="367" height="428"/>
+        <image name="nose" width="367" height="428"/>
+        <image name="shoes" width="367" height="428"/>
+    </resources>
 </document>
