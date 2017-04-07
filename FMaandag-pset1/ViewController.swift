@@ -32,98 +32,46 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func addArms(_ sender: Any) {
-        if arms.isHidden==false{
-            arms.isHidden=true
-        }
-        else if arms.isHidden==true{
-            arms.isHidden=false
-        }
+    @IBAction func addArms(_ sender: UISwitch) {
+        arms.isHidden = !sender.isOn
     }
 
-    @IBAction func addEars(_ sender: Any) {
-        if ears.isHidden==false{
-            ears.isHidden=true
-        }
-        else if ears.isHidden==true{
-            ears.isHidden=false
-        }
+    @IBAction func addEars(_ sender: UISwitch) {
+        ears.isHidden = !sender.isOn
     }
 
     
-    @IBAction func addBrows(_ sender: Any) {
-        if brows.isHidden==false{
-        brows.isHidden=true
-    }
-    else if brows.isHidden==true{
-        brows.isHidden=false
-        }
+    @IBAction func addBrows(_ sender: UISwitch) {
+        brows.isHidden = !sender.isOn
     }
     
-    @IBAction func addEyes(_ sender: Any) {
-        if eyes.isHidden==false{
-        eyes.isHidden=true
-    }
-    else if eyes.isHidden==true{
-        eyes.isHidden=false
-        }
+    @IBAction func addEyes(_ sender: UISwitch) {
+        eyes.isHidden = !sender.isOn
     }
     
-    @IBAction func addGlasses(_ sender: Any) {
-        if glasses.isHidden==false{
-        glasses.isHidden=true
-    }
-    else if glasses.isHidden==true{
-        glasses.isHidden=false
-        }
+    @IBAction func addGlasses(_ sender: UISwitch) {
+        glasses.isHidden = !sender.isOn
     }
     
-    @IBAction func addHat(_ sender: Any) {
-        if hat.isHidden==false{
-        hat.isHidden=true
-    }
-    else if hat.isHidden==true{
-        hat.isHidden=false
-        }
+    @IBAction func addHat(_ sender: UISwitch) {
+        hat.isHidden = !sender.isOn
     }
     
-    
-    @IBAction func addMouth(_ sender: Any) {
-        if mouth.isHidden==false{
-        mouth.isHidden=true
-    }
-    else if mouth.isHidden==true{
-        mouth.isHidden=false
-        }
+    @IBAction func addMouth(_ sender: UISwitch) {
+        mouth.isHidden = !sender.isOn
     }
    
-    @IBAction func addMustache(_ sender: Any) {
-        if mustache.isHidden==false{
-        mustache.isHidden=true
-    }
-    else if mustache.isHidden==true{
-        mustache.isHidden=false
-        }
+    @IBAction func addMustache(_ sender: UISwitch) {
+        mustache.isHidden = !sender.isOn
     }
     
     
-    @IBAction func addNose(_ sender: Any) {
-        if nose.isHidden==false{
-        nose.isHidden=true
-    }
-    else if nose.isHidden==true{
-        nose.isHidden=false
-        }
-
+    @IBAction func addNose(_ sender: UISwitch) {
+        nose.isHidden = !sender.isOn
     }
     
-    @IBAction func addShoes(_ sender: Any) {
-        if shoes.isHidden==false{
-            shoes.isHidden=true
-        }
-        else if shoes.isHidden==true{
-            shoes.isHidden=false
-        }
+    @IBAction func addShoes(_ sender: UISwitch) {
+        shoes.isHidden = !sender.isOn
     }
 }
 
